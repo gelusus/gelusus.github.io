@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[白帽子讲Web安全思维导图（持续更新）]]></title>
+    <url>%2F2019%2F03%2F03%2F%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2Web%E5%AE%89%E5%85%A8%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[前言学习用思维导图整理学习过的知识，放到博客也方便查看。 如何把思维导图导出到博客？我是用mindmanager把思维导图导出到html，然后在Hexo的文章中插入iframe。例如： 1&#123;% iframe /uploads/mindmanager/白帽子讲Web安全.html 101% 600 %&#125; 思维导图中的html文件放进Hexo根目录的source的uploads文件夹下，iframe中用相对路径访问思维导图html文件，注意_config.yml中要把思维导图html文件跳过渲染，例如： 1skip_render: [README.md, uploads/mindmanager/*] 思维导图源文件]]></content>
+      <categories>
+        <category>Web安全</category>
+      </categories>
+      <tags>
+        <tag>Web安全</tag>
+        <tag>思维导图</tag>
+      </tags>
+  </entry>
+</search>
