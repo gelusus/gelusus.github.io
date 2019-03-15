@@ -98,25 +98,35 @@
 
 
 
-  <meta name="description" content="专注与网络安全">
-<meta name="keywords" content="网络安全">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://gelusus.github.io/tags/index.html">
+  <meta name="description" content="我用到的工具 Windows：Tor浏览器、Shadowsocks、Proxifier PE 虚拟机Kali：Tor、proxychains   Windows下的配置如何使用Tor？Tor在中国是被封锁的，所以要连上Tor，一般是在Tor之前加一个前置代理比如ss、ssr。下图中的1080端口是我的ss的代理端口。  只要你的ss能连上Tor网络，那么这样设置完之后，Tor浏览器就能连上Tor网">
+<meta name="keywords" content="Tor,Shadowsocks,代理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows和Kali下指定程序走Tor代理">
+<meta property="og:url" content="https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/index.html">
 <meta property="og:site_name" content="Hexo Blog">
-<meta property="og:description" content="专注与网络安全">
+<meta property="og:description" content="我用到的工具 Windows：Tor浏览器、Shadowsocks、Proxifier PE 虚拟机Kali：Tor、proxychains   Windows下的配置如何使用Tor？Tor在中国是被封锁的，所以要连上Tor，一般是在Tor之前加一个前置代理比如ss、ssr。下图中的1080端口是我的ss的代理端口。  只要你的ss能连上Tor网络，那么这样设置完之后，Tor浏览器就能连上Tor网">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-28T09:00:42.557Z">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316124941582.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316012045208.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316015038966.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316021345310.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316021617988.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316022801731.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316023017221.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316023256471.png">
+<meta property="og:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316032341293.png">
+<meta property="og:updated_time" content="2019-03-15T20:30:11.096Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="专注与网络安全">
+<meta name="twitter:title" content="Windows和Kali下指定程序走Tor代理">
+<meta name="twitter:description" content="我用到的工具 Windows：Tor浏览器、Shadowsocks、Proxifier PE 虚拟机Kali：Tor、proxychains   Windows下的配置如何使用Tor？Tor在中国是被封锁的，所以要连上Tor，一般是在Tor之前加一个前置代理比如ss、ssr。下图中的1080端口是我的ss的代理端口。  只要你的ss能连上Tor网络，那么这样设置完之后，Tor浏览器就能连上Tor网">
+<meta name="twitter:image" content="https://gelusus.github.io/images/Windows和Kali下指定程序走Tor代理/20190316124941582.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://gelusus.github.io/tags/">
+  <link rel="canonical" href="https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/">
 
 
 
@@ -126,7 +136,7 @@
   };
 </script>
 
-  <title>tags | Hexo Blog</title>
+  <title>Windows和Kali下指定程序走Tor代理 | Hexo Blog</title>
   
 
 
@@ -229,7 +239,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -293,25 +303,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -359,83 +350,281 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gelusus">
+      <meta itemprop="description" content="专注与网络安全">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags
-
-</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+          <h1 class="post-title" itemprop="name headline">Windows和Kali下指定程序走Tor代理
+
               
-              
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-                
-              
-              目前共计 5 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Shadowsocks/" style="font-size: 12px; color: #ccc">Shadowsocks</a> <a href="/tags/Tor/" style="font-size: 12px; color: #ccc">Tor</a> <a href="/tags/Web安全/" style="font-size: 12px; color: #ccc">Web安全</a> <a href="/tags/代理/" style="font-size: 12px; color: #ccc">代理</a> <a href="/tags/思维导图/" style="font-size: 12px; color: #ccc">思维导图</a>
-            </div>
-          </div>
+            
+          </h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-15 22:53:20" itemprop="dateCreated datePublished" datetime="2019-03-15T22:53:20+08:00">2019-03-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-16 04:30:11" itemprop="dateModified" datetime="2019-03-16T04:30:11+08:00">2019-03-16</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tor/" itemprop="url" rel="index"><span itemprop="name">Tor</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/03/15/Windows和Kali下指定程序走Tor代理/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/15/Windows和Kali下指定程序走Tor代理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="我用到的工具"><a href="#我用到的工具" class="headerlink" title="我用到的工具"></a>我用到的工具</h1><ul>
+<li>Windows：Tor浏览器、Shadowsocks、Proxifier PE</li>
+<li>虚拟机Kali：Tor、proxychains</li>
+</ul>
+<hr>
+<h1 id="Windows下的配置"><a href="#Windows下的配置" class="headerlink" title="Windows下的配置"></a>Windows下的配置</h1><h2 id="如何使用Tor？"><a href="#如何使用Tor？" class="headerlink" title="如何使用Tor？"></a>如何使用Tor？</h2><p>Tor在中国是被封锁的，所以要连上Tor，一般是在Tor之前加一个前置代理比如ss、ssr。下图中的1080端口是我的ss的代理端口。</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316124941582.png" alt></p>
+<p>只要你的ss能连上Tor网络，那么这样设置完之后，Tor浏览器就能连上Tor网络了。</p>
+<a id="more"></a>
+<h2 id="其他应用走Tor代理"><a href="#其他应用走Tor代理" class="headerlink" title="其他应用走Tor代理"></a>其他应用走Tor代理</h2><h3 id="配置torrc"><a href="#配置torrc" class="headerlink" title="配置torrc"></a>配置torrc</h3><p>编辑在\Tor Browser\Browser\TorBrowser\Data\Tor文件夹下的torrc文件，加上下面这几句配置。第二行和第三行意思是在127.0.0.1:9050上开启代理端口。第四行是开启了9100端口，允许任何主机接入，比如给虚拟机接入。（但是没生效。。）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 手动添加</span></span><br><span class="line">SocksPort 9050</span><br><span class="line">SocksListenAddress 127.0.0.1</span><br><span class="line">SocksListenAddress 0.0.0.0:9100</span><br></pre></td></tr></table></figure>
+<p>途中Tor浏览器要一直打开，Tor才会打开，你也可以下载Expert Bundle版本，只有Tor，没有Tor浏览器</p>
+<h3 id="程序设置代理"><a href="#程序设置代理" class="headerlink" title="程序设置代理"></a>程序设置代理</h3><p>例如让chrome走Tor代理，在chrome上安装SwitchyOmega插件，配置如下图，chrome就能接入Tor网络。可以进入<a href="https://check.torproject.org/" target="_blank" rel="noopener">https://check.torproject.org/</a>检查.</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316012045208.png" alt></p>
+<p>再如SQLMap：python sqlmap.py -u <a href="http://testphp.vulnweb.com/artists.php?artist=3" target="_blank" rel="noopener">http://testphp.vulnweb.com/artists.php?artist=3</a> –tor –check-tor</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316015038966.png" alt></p>
+<h3 id="为没有代理功能的程序设置代理"><a href="#为没有代理功能的程序设置代理" class="headerlink" title="为没有代理功能的程序设置代理"></a>为没有代理功能的程序设置代理</h3><p>如果程序本身没有代理功能，可以使用Proxifier PE或者官方推荐的privoxy等软件来指定什么应用走什么代理。<a href="https://www.torproject.org/docs/faq.html.en#TBBSocksPort" target="_blank" rel="noopener">I want to run another application through Tor.</a><br>本文以Proxifier PE为例，先创建代理服务器，添加一个Tor的就行了。（用代理链的方式应该也可以，不过本文的方法在第一步中Tor的配置文件配置了前置代理，所以就不测试这个了。。）</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316021345310.png" alt></p>
+<p>编辑规则，第一条默认127.0.0.1为Direct不走代理。第二条为shadowsocks这个APP Direct，不然会有代理环，最后一条为所有APP走Tor代理，也可以指定特定APP。</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316021617988.png" alt></p>
+<p>然后可以看到会话信息</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316022801731.png" alt></p>
+<p>进一步验证应用走的是Tor</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316023017221.png" alt></p>
+<p>值得注意的是wireshark中能抓到虾米的DNS报文，虾米的DNS报文没有走代理，在浏览器中和SQLMap没发现这种情况。<a href="https://www.torproject.org/docs/faq.html.en#SocksAndDNS" target="_blank" rel="noopener">tor project faq</a>中也有提到。</p>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316023256471.png" alt></p>
+<hr>
+<h1 id="Kali下的配置"><a href="#Kali下的配置" class="headerlink" title="Kali下的配置"></a>Kali下的配置</h1><h2 id="安装Tor、proxychains"><a href="#安装Tor、proxychains" class="headerlink" title="安装Tor、proxychains"></a>安装Tor、proxychains</h2><p>Kali中让其他APP走Tor代理的原理和Windows一样的，基本步骤差不多。安装Tor、proxychains，proxychains默认是已经安装了的。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install tor proxychains</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置torrc-1"><a href="#配置torrc-1" class="headerlink" title="配置torrc"></a>配置torrc</h2><p>本文是物理机10.10.10.1的SOCK5端口1080作为kali中tor的前置代理<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Socks5Proxy 10.10.10.1:1080</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置proxychains"><a href="#配置proxychains" class="headerlink" title="配置proxychains"></a>配置proxychains</h2><p>这是默认的，所以不用配置就行。如果可以的话物理机开启Tor服务给虚拟机用也是比较方便的，可以参考<a href="https://www.torproject.org/docs/faq.html.en#ServerClient" target="_blank" rel="noopener">Can I install Tor on a central server, and have my clients connect to it?</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socks4 	127.0.0.1 9050</span><br></pre></td></tr></table></figure></p>
+<h2 id="启动tor，用proxychains启动应用"><a href="#启动tor，用proxychains启动应用" class="headerlink" title="启动tor，用proxychains启动应用"></a>启动tor，用proxychains启动应用</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/tor start</span><br><span class="line">proxychains firefox</span><br></pre></td></tr></table></figure>
+<p><img src="/images/Windows和Kali下指定程序走Tor代理/20190316032341293.png" alt></p>
+<hr>
+<p>如有错误，欢迎指出</p>
+
       
     </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+      <div>
+        
 
 
 
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>gelusus</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
     
+    <a href="https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/" title="Windows和Kali下指定程序走Tor代理">https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
-    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Tor/" rel="tag"># Tor</a>
+          
+            <a href="/tags/Shadowsocks/" rel="tag"># Shadowsocks</a>
+          
+            <a href="/tags/代理/" rel="tag"># 代理</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/03/白帽子讲Web安全思维导图/" rel="next" title="白帽子讲Web安全思维导图（持续更新）">
+                <i class="fa fa-chevron-left"></i> 白帽子讲Web安全思维导图（持续更新）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -456,8 +645,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -545,6 +743,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我用到的工具"><span class="nav-number">1.</span> <span class="nav-text">我用到的工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Windows下的配置"><span class="nav-number">2.</span> <span class="nav-text">Windows下的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用Tor？"><span class="nav-number">2.1.</span> <span class="nav-text">如何使用Tor？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他应用走Tor代理"><span class="nav-number">2.2.</span> <span class="nav-text">其他应用走Tor代理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置torrc"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置torrc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序设置代理"><span class="nav-number">2.2.2.</span> <span class="nav-text">程序设置代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为没有代理功能的程序设置代理"><span class="nav-number">2.2.3.</span> <span class="nav-text">为没有代理功能的程序设置代理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kali下的配置"><span class="nav-number">3.</span> <span class="nav-text">Kali下的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Tor、proxychains"><span class="nav-number">3.1.</span> <span class="nav-text">安装Tor、proxychains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置torrc-1"><span class="nav-number">3.2.</span> <span class="nav-text">配置torrc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置proxychains"><span class="nav-number">3.3.</span> <span class="nav-text">配置proxychains</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动tor，用proxychains启动应用"><span class="nav-number">3.4.</span> <span class="nav-text">启动tor，用proxychains启动应用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -690,9 +905,28 @@
   <script id="dsq-count-scr" src="https://buluoge.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://gelusus.github.io/2019/03/15/Windows和Kali下指定程序走Tor代理/";
+    this.page.identifier = "2019/03/15/Windows和Kali下指定程序走Tor代理/";
+    this.page.title = 'Windows和Kali下指定程序走Tor代理';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://buluoge.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   

@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows和Kali下指定程序走Tor代理]]></title>
+    <url>%2F2019%2F03%2F15%2FWindows%E5%92%8CKali%E4%B8%8B%E6%8C%87%E5%AE%9A%E7%A8%8B%E5%BA%8F%E8%B5%B0Tor%E4%BB%A3%E7%90%86%2F</url>
+    <content type="text"><![CDATA[我用到的工具 Windows：Tor浏览器、Shadowsocks、Proxifier PE 虚拟机Kali：Tor、proxychains Windows下的配置如何使用Tor？Tor在中国是被封锁的，所以要连上Tor，一般是在Tor之前加一个前置代理比如ss、ssr。下图中的1080端口是我的ss的代理端口。 只要你的ss能连上Tor网络，那么这样设置完之后，Tor浏览器就能连上Tor网络了。 其他应用走Tor代理配置torrc编辑在\Tor Browser\Browser\TorBrowser\Data\Tor文件夹下的torrc文件，加上下面这几句配置。第二行和第三行意思是在127.0.0.1:9050上开启代理端口。第四行是开启了9100端口，允许任何主机接入，比如给虚拟机接入。（但是没生效。。） 1234# 手动添加SocksPort 9050SocksListenAddress 127.0.0.1SocksListenAddress 0.0.0.0:9100 途中Tor浏览器要一直打开，Tor才会打开，你也可以下载Expert Bundle版本，只有Tor，没有Tor浏览器 程序设置代理例如让chrome走Tor代理，在chrome上安装SwitchyOmega插件，配置如下图，chrome就能接入Tor网络。可以进入https://check.torproject.org/检查. 再如SQLMap：python sqlmap.py -u http://testphp.vulnweb.com/artists.php?artist=3 –tor –check-tor 为没有代理功能的程序设置代理如果程序本身没有代理功能，可以使用Proxifier PE或者官方推荐的privoxy等软件来指定什么应用走什么代理。I want to run another application through Tor.本文以Proxifier PE为例，先创建代理服务器，添加一个Tor的就行了。（用代理链的方式应该也可以，不过本文的方法在第一步中Tor的配置文件配置了前置代理，所以就不测试这个了。。） 编辑规则，第一条默认127.0.0.1为Direct不走代理。第二条为shadowsocks这个APP Direct，不然会有代理环，最后一条为所有APP走Tor代理，也可以指定特定APP。 然后可以看到会话信息 进一步验证应用走的是Tor 值得注意的是wireshark中能抓到虾米的DNS报文，虾米的DNS报文没有走代理，在浏览器中和SQLMap没发现这种情况。tor project faq中也有提到。 Kali下的配置安装Tor、proxychainsKali中让其他APP走Tor代理的原理和Windows一样的，基本步骤差不多。安装Tor、proxychains，proxychains默认是已经安装了的。1apt-get install tor proxychains 配置torrc本文是物理机10.10.10.1的SOCK5端口1080作为kali中tor的前置代理1Socks5Proxy 10.10.10.1:1080 配置proxychains这是默认的，所以不用配置就行。如果可以的话物理机开启Tor服务给虚拟机用也是比较方便的，可以参考Can I install Tor on a central server, and have my clients connect to it?1socks4 127.0.0.1 9050 启动tor，用proxychains启动应用12/etc/init.d/tor startproxychains firefox 如有错误，欢迎指出]]></content>
+      <categories>
+        <category>Tor</category>
+      </categories>
+      <tags>
+        <tag>Tor</tag>
+        <tag>Shadowsocks</tag>
+        <tag>代理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[白帽子讲Web安全思维导图（持续更新）]]></title>
     <url>%2F2019%2F03%2F03%2F%E7%99%BD%E5%B8%BD%E5%AD%90%E8%AE%B2Web%E5%AE%89%E5%85%A8%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[前言学习用思维导图整理学习过的知识，放到博客也方便查看。 如何把思维导图导出到博客？我是用mindmanager把思维导图导出到html，然后在Hexo的文章中插入iframe。例如： 1&#123;% iframe /uploads/mindmanager/白帽子讲Web安全.html 101% 600 %&#125; 思维导图中的html文件放进Hexo根目录的source的uploads文件夹下，iframe中用相对路径访问思维导图html文件，注意_config.yml中要把思维导图html文件跳过渲染，例如： 1skip_render: [README.md, uploads/mindmanager/*] 思维导图源文件]]></content>
